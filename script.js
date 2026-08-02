@@ -2,7 +2,7 @@
 const $ = (selector, scope = document) => scope.querySelector(selector);
 const $$ = (selector, scope = document) => [...scope.querySelectorAll(selector)];
 const birthdayConfig = {
-  music: 'assets/music/your-birthday-track.mp3',
+  music: 'assets/music/Post Malone,Swae Lee - Sunflower - Spider-Man Into The Spider-Verse.mp3',
   photos: [
     { src: 'assets/photos/kavish-memory-01.jpg', caption: 'Us, caught in the sunshine' },
     { src: 'assets/photos/kavish-memory-02.jpg', caption: 'Best-friend energy, anime edition' },
