@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#08090e">
+  <meta name="description" content="A neon birthday experience made for Kavish.">
+  <title>KASHU // BIRTHDAY.EXE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading birthday experience">
+    <div class="loader__grid"></div><div class="loader__orb"></div>
+    <div class="loader__copy"><span class="eyebrow">INITIALIZING MEMORY CORE</span><strong>KASHU<span class="accent">.</span>EXE</strong><div class="loader__bar"><i></i></div><small id="load-status">loading good vibes...</small></div>
+  </div>
+
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-dot" id="cursor-dot"></div><div class="cursor-ring" id="cursor-ring"></div>
+  <div class="scroll-progress" id="scroll-progress"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="site-nav" id="site-nav">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand__mark">K</span><span>KASHU<span class="accent">/</span>07</span></a>
+    <nav aria-label="Primary navigation"><a href="#profile">Profile</a><a href="#games">Games</a><a href="#memories">Memories</a><a href="#wish">Wish</a></nav>
+    <button class="icon-button" id="music-toggle" aria-label="Toggle music" title="Add your MP3 to assets/music/"><span>♫</span><i class="sound-bars"><b></b><b></b><b></b></i></button>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad" id="hero">
+      <div class="hero__aurora hero__aurora--one"></div><div class="hero__aurora hero__aurora--two"></div>
+      <div class="hero__meta reveal"><span class="status-dot"></span> CONNECTION ESTABLISHED <span class="meta-line"></span> <span id="greeting">GOOD EVENING, PLAYER</span></div>
+      <div class="hero__content">
+        <p class="kicker reveal">A DIGITAL TRANSMISSION FOR</p>
+        <h1 class="hero__title reveal"><span>HAPPY</span><span class="hero__title--outline">BIRTHDAY</span><span class="hero__title--name">KASHU<span class="accent">.</span></span></h1>
+        <div class="hero__footer reveal"><p>07 <span>/</span> AUGUST</p><p class="hero__sub">A website made just for you <span class="heart">♥</span></p><button class="button button--primary" data-ripple id="enter-button">Enter the experience <span>↗</span></button></div>
+      </div>
+      <div class="hero__side-note"><span>SCROLL TO EXPLORE</span><i></i></div><div class="hero__coords">19° 04' N<br>72° 52' E</div>
+    </section>
+
+    <section class="section section-pad" id="profile">
+      <div class="section-head reveal"><span class="section-index">01 / IDENTITY</span><h2>Who is<br><em>Kavish?</em></h2><p>Every squad has a main character.<br>Ours just happens to be you.</p></div>
+      <div class="profile-layout">
+        <div class="profile-card glass-card reveal tilt-card"><div class="profile-card__top"><span>PLAYER PROFILE</span><span>AGE. <b id="age-value">15</b></span></div><div class="avatar"><span>K</span><div class="avatar__ring"></div><div class="avatar__status"></div></div><h3>KASHU<span class="accent">.</span></h3><p class="mono">// professional vibe dealer</p><div class="profile-card__stats"><div><small>BIRTHDAY</small><strong>07 AUG 2010</strong></div><div><small>STATUS</small><strong class="green">ONLINE</strong></div></div><div class="profile-card__stamp">EST.<br>FOREVER</div></div>
+        <div class="profile-facts reveal"><div class="fact"><span class="fact__icon">✦</span><div><small>KNOWN FOR</small><strong>Late Night Specialist</strong><p>Turning a quick call into a 4-hour lore session.</p></div></div><div class="fact"><span class="fact__icon">◈</span><div><small>FAVOURITE GAMES</small><strong>Free Fire / BlockHeaven</strong><p>One for the clutch. One for the chaos.</p></div></div><div class="fact"><span class="fact__icon">∞</span><div><small>RARE ABILITY</small><strong>Professional Vibe Dealer 😎</strong><p>Passive skill: makes every memory legendary.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="section section--fire section-pad" id="games">
+      <div class="section-head reveal"><span class="section-index">02 / LOADOUT</span><h2>Two worlds.<br><em>One legend.</em></h2><p>Different maps, same teammate.<br>Pick your arena.</p></div>
+      <div class="game-grid">
+        <article class="game-card game-card--fire reveal"><div class="game-card__glow"></div><div class="game-card__top"><span class="game-icon">◒</span><span class="mono">BATTLE ROYALE / 01</span></div><h3>FREE<br><b>FIRE</b></h3><div class="guild">PLAYER <strong>NXT KAVI</strong></div><div class="rank"><span>RANK</span><strong>♢ MASTER</strong><i><b></b></i></div><div class="weapons"><span>◈ AWM</span><span>◉ M1887</span><span>✦ GLOO WALL</span></div><span class="game-card__number">01</span></article>
+        <article class="game-card game-card--block reveal"><div class="game-card__glow"></div><div class="game-card__top"><span class="game-icon">◆</span><span class="mono">SURVIVAL / 02</span></div><h3>BLOCK<span>HEAVEN</span></h3><div class="guild">SERVER <strong>ADVENTURE MODE</strong></div><div class="rank"><span>BIOME</span><strong>✧ PLAINS</strong><i><b></b></i></div><div class="weapons"><span>▦ MINES</span><span>◇ DIAMONDS</span><span>✦ VILLAGE</span></div><span class="game-card__number">02</span><div class="pixel-cube"></div></article>
+      </div>
+    </section>
+
+    <section class="section section-pad" id="memories">
+      <div class="section-head section-head--wide reveal"><span class="section-index">03 / ARCHIVE</span><h2>The highlight<br><em>reel.</em></h2><p>Drop your photos into <code>assets/photos/</code> and add them to the array in <code>script.js</code>.<br>These placeholders are waiting for your best chaos.</p></div>
+      <div class="memory-grid" id="memory-grid"></div>
+    </section>
+
+    <section class="section timeline-section section-pad" id="timeline">
+      <div class="section-head reveal"><span class="section-index">04 / LOG FILES</span><h2>Our<br><em>timeline.</em></h2><p>Some checkpoints from<br>the greatest co-op campaign.</p></div>
+      <div class="timeline"><div class="timeline__line"></div><article class="timeline-item reveal"><span class="timeline-item__date">01 / ORIGIN</span><h3>Met each other</h3><p>And instantly unlocked the “this guy is going to be a problem” achievement.</p></article><article class="timeline-item reveal"><span class="timeline-item__date">02 / CO-OP</span><h3>First Minecraft session</h3><p>Built a house. Lost the house. Blamed the creeper. Classic.</p></article><article class="timeline-item reveal"><span class="timeline-item__date">03 / CLUTCH</span><h3>Free Fire nights</h3><p>One more game became an entire sunrise. Worth it.</p></article><article class="timeline-item reveal"><span class="timeline-item__date">04 / FOREVER</span><h3>Future adventures loading...</h3><p>New maps. Same duo. Infinite stories still to write.</p></article></div>
+    </section>
+
+    <section class="section section--jokes section-pad" id="jokes"><div class="section-head section-head--wide reveal"><span class="section-index">05 / CLASSIFIED</span><h2>Inside<br><em>jokes.</em></h2><p>Tap a card. You know the protocol.</p></div><div class="joke-grid"><button class="joke-card reveal" data-flip><span class="joke-front">THE UNEXPLAINED<br>LAUGH <b>↗</b></span><span class="joke-back">That one moment we still cannot explain.<br><strong>Still funny.</strong></span></button><button class="joke-card reveal" data-flip><span class="joke-front">ONE MORE GAME<br>SYNDROME <b>↗</b></span><span class="joke-back">“Last one” has never once meant last one.<br><strong>Sunrise unlocked.</strong></span></button><button class="joke-card reveal" data-flip><span class="joke-front">BRO, TRUST ME<br>ON THIS <b>↗</b></span><span class="joke-back">The plan was questionable.<br><strong>The memory was perfect.</strong></span></button></div></section>
+
+    <section class="section wish-section section-pad" id="wish"><div class="wish-card reveal"><div class="wish-card__top"><span>TRANSMISSION / 07.08</span><span>♥</span></div><span class="section-index">06 / FROM THE HEART</span><h2>A note for<br><em>Kashu.</em></h2><p class="typewriter" id="wish-text"></p><button class="button button--ghost" id="wish-button" data-ripple>Open the full message <span>↗</span></button><div class="wish-card__signature">— your favourite teammate</div></div></section>
+
+    <section class="section arcade-section section-pad" id="arcade"><div class="section-head section-head--wide reveal"><span class="section-index">07 / BONUS ROUND</span><h2>Play the<br><em>arcade.</em></h2><p>Three tiny challenges. Infinite bragging rights.</p></div><div class="arcade-grid"><div class="arcade-card reveal"><div class="arcade-card__head"><span>CATCH THE CAKE</span><b id="cake-score">00</b></div><div class="game-window" id="cake-game"><button class="cake-target" id="cake-target">🎂</button><span class="game-hint">catch it if you can</span></div><button class="mini-button" id="cake-start">START GAME</button></div><div class="arcade-card reveal"><div class="arcade-card__head"><span>CLICK THE EMERALD</span><b id="emerald-score">00</b></div><div class="game-window game-window--emerald" id="emerald-game"><button class="emerald-target" id="emerald-target">◆</button><span class="game-hint">find the rare drop</span></div><button class="mini-button" id="emerald-start">START GAME</button></div><div class="arcade-card reveal"><div class="arcade-card__head"><span>PARTY POPPER</span><b>∞</b></div><div class="game-window fireworks-window" id="fireworks-game"><span class="firework-copy">MAKE<br>SOME<br>NOISE</span></div><button class="mini-button mini-button--hot" id="fireworks-trigger">POP OFF</button></div></div></section>
+
+    <section class="section achievement-section section-pad" id="achievements"><div class="section-head reveal"><span class="section-index">08 / UNLOCKS</span><h2>Achievement<br><em>board.</em></h2><p>Collectibles are hidden everywhere.<br>Keep your eyes open.</p></div><div class="achievement-grid"><div class="achievement reveal" data-achievement="year"><span>🏆</span><div><small>ACHIEVEMENT UNLOCKED</small><strong>Survived Another Year</strong></div><b>01</b></div><div class="achievement reveal" data-achievement="fire"><span>🔥</span><div><small>ACHIEVEMENT UNLOCKED</small><strong>Free Fire Veteran</strong></div><b>02</b></div><div class="achievement reveal" data-achievement="block"><span>◆</span><div><small>ACHIEVEMENT UNLOCKED</small><strong>BlockHeaven Explorer</strong></div><b>03</b></div><div class="achievement reveal" data-achievement="night"><span>☾</span><div><small>ACHIEVEMENT UNLOCKED</small><strong>Certified Night Owl</strong></div><b>04</b></div></div></section>
+
+    <section class="finale section-pad"><div class="finale__stars"></div><p class="kicker reveal">END OF TRANSMISSION</p><h2 class="reveal">Thanks for being<br><em>an amazing friend.</em></h2><p class="finale__sub reveal">See you in the next adventure <span>✦</span></p><button class="secret-button" id="secret-button" aria-label="Secret button">?</button><div class="finale__footer"><span>KASHU / 07</span><span>MADE WITH ♥ AND TOO MANY MEMORIES</span><span>2010—∞</span></div></section>
+    <section class="countdown-section section-pad" id="countdown"><div class="countdown-copy reveal"><span class="section-index">07 / COUNTDOWN</span><h2>Next level<br><em>incoming.</em></h2><p>The birthday signal goes live in</p></div><div class="countdown-grid reveal"><div><strong id="count-days">00</strong><span>DAYS</span></div><div><strong id="count-hours">00</strong><span>HOURS</span></div><div><strong id="count-minutes">00</strong><span>MINUTES</span></div><div><strong id="count-seconds">00</strong><span>SECONDS</span></div></div></section>
+  </main>
+
+  <div class="toast" id="toast"><span class="toast__icon">✦</span><div><small>ACHIEVEMENT UNLOCKED</small><strong id="toast-text">Nice move.</strong></div></div>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox__close" id="lightbox-close">×</button><img id="lightbox-image" alt="Memory preview"><p id="lightbox-caption"></p></div>
+  <div class="bro-mode" id="bro-mode"><div class="bro-mode__scanlines"></div><span class="kicker">// SYSTEM OVERRIDE</span><h2>BRO MODE<br><em>ACTIVATED</em></h2><p>Friendship level: dangerously high.</p><button class="button button--primary" id="bro-close">Return to reality ↗</button><div class="bro-mode__emoji">😎 🔥 🕺 🎮 💀</div></div>
+  <button class="back-top" id="back-top" aria-label="Back to top">↑</button>
+  <audio id="birthday-audio" loop preload="none"><source src="assets/music/your-birthday-track.mp3" type="audio/mpeg"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
